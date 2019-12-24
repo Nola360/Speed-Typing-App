@@ -1,7 +1,7 @@
 window.addEventListener('load', init);
 
 
-// Variables
+
 
 
 
@@ -13,15 +13,14 @@ const levels = {
 }
 
 // To change level
-const currentLevel = levels.hard;
+const currentLevel = levels.easy;
 
-
+// Variables
 let time = currentLevel;
 let score = 0;
 let isPlaying;
 
 // DOM Elements
-
 const wordInput = document.querySelector('#word-input');
 const currentWord = document.querySelector('#current-word');
 const scoreDisplay = document.querySelector('#score');
@@ -138,7 +137,6 @@ const words = [
 ];
 
 // Initialize Game
-
 function init() {
   // Show number of seconds in UI 
   seconds.innerHTML = currentLevel;
